@@ -1,14 +1,28 @@
-<html>
-<head>
-<title>Welcome Page</title>
-</head>
-<body>
-	<div>
-		<h1>Welcome to our APP!!</h1>
-	</div>
-	<div>
-		<h1>Your Todos are: ${todos}</h1>
-	</div>
-	
-</body>
-</html>
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>	
+
+<div class="container">
+	<h1>Your Todos</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Description</th>
+				<th>Target Date</th>
+				<th>Is Done?</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>		
+			<c:forEach items="${todos}" var="todo">
+				<tr>
+					<td>${todo.description}</td>
+					<td>${todo.targetDate}</td>
+					<td>${todo.done}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+</div>
+
+<%@ include file="common/footer.jspf" %>
