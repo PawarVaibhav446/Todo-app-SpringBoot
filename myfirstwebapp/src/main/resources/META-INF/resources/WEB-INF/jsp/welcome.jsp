@@ -10,5 +10,9 @@
 		<h1>Name: ${name}</h1>
 	</div>
 	
+	<div>
+	<a href="list-todos"> Manage </a> Your Todos.
+	</div>
+	
 </body>
 </html>
