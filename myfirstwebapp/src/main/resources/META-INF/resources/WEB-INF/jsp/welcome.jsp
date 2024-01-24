@@ -3,16 +3,10 @@
 <title>Welcome Page</title>
 </head>
 <body>
-	<div>
-		<h1>Welcome to our APP!!</h1>
+	<div class="container">
+		<h1>Welcome ${name}</h1>
+		<a href="list-todos">Manage</a> your todos
 	</div>
-	<div>
-		<h1>Name: ${name}</h1>
-	</div>
-	
-	<div>
-	<a href="list-todos"> Manage </a> Your Todos.
-	</div>
-	
+
 </body>
 </html>
